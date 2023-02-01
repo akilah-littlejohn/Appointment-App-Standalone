@@ -1,0 +1,28 @@
+<div [ngSwitch]="submitted">
+  <h1 class="center-elements" *ngSwitchCase="true">Your Appointment Date</h1>
+  <h1 class="center-elements" *ngSwitchDefault>Choose Your Appointment Date</h1>
+</div>
+
+<main class="center-elements">
+  <form #form="ngForm" (ngSubmit)="onSubmit(form.value)">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date" ngModel name="date" required>
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <mat-label>Hair Style</mat-label>
+        <mat-select ngModel name="hairstyle" required>
+          <mat-option value="ponytail">Ponytail</mat-option>
+          <mat-option value="curls">Curls</mat-option>
+        </mat-select>
+      </mat-form-field>
+    
+      <mat-form-field>
+        <textarea matInput placeholder="Special message" ngModel name="message"></textarea>
+      </mat-form-field>
+      <button mat-raised-button color="primary">Set Appointment</button>
+    </form>
+    
+</main>

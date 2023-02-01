@@ -1,0 +1,21 @@
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+h1,
+h3 {
+  font-family: Verdana;
+  letter-spacing: 2px;
+}
+
+.center-elements {
+  display: flex;
+  justify-content: center;
+}

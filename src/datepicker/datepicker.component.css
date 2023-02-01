@@ -1,0 +1,17 @@
+h1 {
+  letter-spacing: 2px;
+  padding: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #fff;
+  background-color: #673ab7;
+  text-shadow: 1px 1px 10px #000;
+  box-shadow: 1px 1px 5px #000;
+  width: 100%;
+  font-size: medium;
+}
+
+form {
+  display: grid;
+  justify-content: center;
+  padding: 2em;
+}

@@ -1,0 +1,19 @@
+<section class="container">
+  <h1 class="container">Thank You!</h1>
+  <mat-icon class="icon">check_circle</mat-icon>
+
+  <p class="container text">
+    Your {{ data.hairstyle }} appointment for {{ data.date | date }}
+    has been confirmed!
+  </p> 
+
+
+  <h3 class="container">Special Request</h3>
+  <p class="text-box"> 
+    {{data.message}}
+  </p>
+
+  <button mat-raised-button color="primary" (click)=" mockAppSubmit()">Make Another Appointment
+  </button>
+
+</section>
